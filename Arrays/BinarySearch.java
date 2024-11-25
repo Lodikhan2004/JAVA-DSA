@@ -12,7 +12,7 @@ public class BinarySearch {
                 return mid;
             }
             if(key<arr[mid]){
-                end=mid-1;
+                end=mid-1;  
             }
             else{             // if(key>arr[mid])
                 start=mid+1;
