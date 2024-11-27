@@ -20,7 +20,7 @@ public class Stocks {
         return maxProfit;
     }
     public static void main(String[] args) {
-                Scanner sc= new Scanner(System.in);
+        Scanner sc= new Scanner(System.in);
         System.out.println("Enter no of days:");
         int n=sc.nextInt();
         int prices[]=new int[n];
