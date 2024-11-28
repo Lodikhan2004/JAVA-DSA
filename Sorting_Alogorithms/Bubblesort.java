@@ -1,4 +1,4 @@
-package Arrays;
+package Sorting_Alogorithms;
 
 import java.util.Scanner;
 
@@ -31,7 +31,7 @@ public class Bubblesort{
             arr[i]=sc.nextInt();
         }
         bubblesort(arr);
-        
         sc.close();
     }
 }
+//TIME COMPLEXITY==>O(n**2)
