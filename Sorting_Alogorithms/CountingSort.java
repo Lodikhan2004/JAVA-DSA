@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class CountingSort {
     public static void countsort(int arr[]){
-        int n=arr.length;
+       
         //find the largest no or range for count array
         int largest=Integer.MIN_VALUE;
         for(int i=0;i<arr.length;i++){
@@ -20,7 +20,7 @@ public class CountingSort {
         }
         //sorting
         int j=0;
-        for(int i=0; i<count.length ;i++){ //traverse count array
+        for(int i=0; i<count.length ;i++){ //traverse count array // Decreasing order for(i=count.length-1;i>=0;i--)
             while(count[i]>0){  //if frequency is >0 then
                 arr[j] = i;     //store the index of count in original array
                 j++;            // increment actual array
@@ -35,7 +35,7 @@ public class CountingSort {
         }
     }
     public static void main(String[] args) {
-         Scanner sc= new Scanner(System.in);
+        Scanner sc= new Scanner(System.in);
         System.out.println("Enter no of array elements:");
         int n=sc.nextInt();
         int arr[]=new int[n];
