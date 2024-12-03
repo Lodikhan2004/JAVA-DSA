@@ -47,11 +47,8 @@ public class BasicConcept {
         }
         else{
             System.out.println("strings are not equal");
-        }
-        
-
-
-        
-    }
-    
+        }  
+       
+   
+    }  
 }
