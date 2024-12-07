@@ -48,7 +48,14 @@ public class BasicConcept {
         else{
             System.out.println("strings are not equal");
         }  
-       
+    String str="afzzal".replace('z','k' );
+        System.out.println(str);
    
+      
+            String str10 = "hello world, hello everyone";
+            String result = str10.replace("hello", "hi");
+            System.out.println(result);  // Output: hi world, hi everyone
+        
+    
     }  
 }
