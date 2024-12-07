@@ -15,25 +15,30 @@ public class isAnagrams {
        Arrays.sort(str1arr);
        Arrays.sort(str2arr);
 
+
+       // check if length are same
        if(str1arr.length == str2arr.length){
+
             boolean result = Arrays.equals(str1arr, str2arr);
             if(result){
                 System.out.println("anagram");
-            }else{
+            }
+           else{
                 System.out.println("not anagram");
             }
 
-       }else{
-        System.out.println("not anagram");
-       }  
+        }
+        else{
+            System.out.println("not anagram");
+        }  
     }
     public static void main(String[] args) {
-     Scanner sc = new Scanner(System.in);
-     System.out.println("ENTER 2 STRINGS");
-     String str1=sc.nextLine();
-     String str2=sc.nextLine();
-      is_anagrams(str1, str2);
-        
+        Scanner sc = new Scanner(System.in);
+        System.out.println("ENTER 2 STRINGS");
+        String str1=sc.nextLine();
+        String str2=sc.nextLine();
+        is_anagrams(str1, str2);
+        sc.close();
     }
     
 }
