@@ -48,14 +48,23 @@ public class BasicConcept {
         else{
             System.out.println("strings are not equal");
         }  
-    String str="afzzal".replace('z','k' );
+
+        //replace() method
+        String str="afzzal".replace('z','k' );
         System.out.println(str);
-   
-      
-            String str10 = "hello world, hello everyone";
-            String result = str10.replace("hello", "hi");
-            System.out.println(result);  // Output: hi world, hi everyone
+        String str10 = "hello world, hello everyone";
+        String result = str10.replace("hello", "hi");
+        System.out.println(result);  // Output: hi world, hi everyone
         
-    
+        //intern() method
+        String str1 = "hello";
+        String str2 = new String("hello");
+        System.out.println(str1 == str2); // false
+
+        // Intern the strings
+        str1 = str1.intern();
+        str2 = str2.intern();
+        System.out.println(str1 == str2); // true
+
     }  
 }
