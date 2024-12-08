@@ -6,7 +6,7 @@ public class DiagonalSum {
 
     public static int diagonalSum(int matrix[][]){
         int n=matrix.length;
-        int m=matrix[0].length;
+        //int m=matrix[0].length;
         int Sum=0;
        /* for(int i=0; i<n; i++){
             for(int j=0; j<m; j++){
