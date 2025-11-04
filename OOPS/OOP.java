@@ -21,9 +21,6 @@ public class OOP{
        
        //acc.password="lodi@123"; => cannot be accessed
        acc.setPassword("lodi@123");// can be modified
-       System.out.println(acc.setPassword("lodi@123"));
-
-
 
     }   
 }
@@ -32,10 +29,8 @@ class BankAccount{
     public String username; //can be accessed
     private String password; //cannot be accessed
 
-    public String setPassword(String pwd){ //can be accessed
+    public void setPassword(String pwd){ //can be accessed
         password = pwd;
-    
-    return password;
     }
     
 
