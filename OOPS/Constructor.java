@@ -5,11 +5,8 @@ public class Constructor {
         Student s1 = new Student("afzal");
         System.out.println(s1.name);
         Student s2 = new Student("venkat");
-        System.out.println(s2.name);
-     
-        
-    }
-    
+        System.out.println(s2.name);   
+    }   
 }
 class Student{
     String name;
