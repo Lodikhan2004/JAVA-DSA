@@ -41,6 +41,7 @@ public class Abstraction {
     public static void main(String[] args) {
        
         Mustang m1 = new Mustang();
+        Animal --> Horse --> Mustang
         System.out.println(m1.color);
     }
     
