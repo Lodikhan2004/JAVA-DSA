@@ -1,5 +1,5 @@
 package OOPS;
-/* 
+//Total Abstraction using Interfaces
 public class Interfaces {
     public static void main(String[] args) {
         Queen q = new Queen();
@@ -31,7 +31,9 @@ class King implements ChessPlayer{
         System.out.println("up,down,right,left,diagonal (By one step)");
     }
 }
-*/
+
+
+/*                 Multiple-Inheritance using Interfaces
 public class Interfaces {
     public static void main(String[] args) {
         Child afzal =new Child();
@@ -69,3 +71,20 @@ class Child implements Father,Mother{
     }
 }
 
+
+*/
+// Diamond shape multiple inheretance example
+/*interface A {
+    void show();
+}
+
+interface B extends A { }
+
+interface C extends A { }
+
+class D implements B, C {
+    public void show() {           // Must implement here
+        System.out.println("Hello");
+    }
+}
+ */
