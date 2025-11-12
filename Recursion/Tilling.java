@@ -6,7 +6,11 @@ public class Tilling {
         if(n == 0 | n == 1){
             return 1; //no of ways is 1
         }
-        return  tile(n-1)+tile(n-2);
+        int vertical = tile(n-1);
+        int horizontal = tile(n-2);
+
+        int totalways = vertical + horizontal; //total no of ways 
+        return totalways;
 
 
     }
