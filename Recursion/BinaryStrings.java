@@ -14,9 +14,7 @@ public class BinaryStrings {
        
     }
     public static void main(String[] args) {
-        BinStr(3, new String(""), 0);
-       
-        
+        BinStr(3, new String(""), 0);  
     }
     
 }

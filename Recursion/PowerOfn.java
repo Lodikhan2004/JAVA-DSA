@@ -7,8 +7,15 @@ public class PowerOfn {
         }
         return x * power(x, n-1);
     }
+    public static int powerof2(int n){
+        if(n == 0){
+            return 1;
+        }
+        return 2*powerof2(n-1);
+    }
     public static void main(String[] args) {
-        System.out.println(power(2, 5));
+        System.out.println(powerof2(5));
+        //System.out.println(power(2, 2));
         
         
     }

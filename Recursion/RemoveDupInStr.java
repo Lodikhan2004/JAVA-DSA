@@ -2,7 +2,6 @@ package Recursion;
 
 public class RemoveDupInStr {
     public static void RmvDuplInStr(String str, int i, StringBuilder newstr, boolean map[]){
-    
         if(i == str.length()){
             System.out.println(newstr);
             return;
@@ -26,6 +25,5 @@ public class RemoveDupInStr {
         String str = "appnnacollege";
         RmvDuplInStr(str, 0, newstr, map);
 
-    }
-    
+    }   
 }
