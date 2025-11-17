@@ -2,6 +2,10 @@ package Divide_Conquer;
 
 public class RotatedSortedArr {
     public static int searchInRotatedArr(int arr[],int si, int ei, int target){
+        //Base Case
+        if(si > ei){
+            return -1;
+        }
         //kaam
         int mid = si + (ei-si)/2;
         //Case found
@@ -24,7 +28,7 @@ public class RotatedSortedArr {
         //Mid on Line 2
         else{
             //case c : right
-            if(arr[mid] <=target && target <= arr[ei]){
+            if(target >=arr[mid] && target <= arr[ei]){
                 return searchInRotatedArr(arr, mid+1, ei, target);
             }
             //case d : left
