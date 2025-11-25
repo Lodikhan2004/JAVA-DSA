@@ -4,14 +4,17 @@ import Strings.printCharacters;
 
 public class BackTrackArray {
     public static void backArray(int arr[] , int i){
+        //Base Case
         if(i == arr.length){
             printArray(arr);
            
             return;
 
         }
+        //Recursion
         arr[i] = i+1;
         backArray(arr, i+1);
+        //Backtracking step
         arr[i] = arr[i] -2;
 
     }
