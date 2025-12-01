@@ -10,7 +10,8 @@ public class ReverseArrayList {
         list.add(4);
         list.add(5);
         int n =list.size();
-        for(int i= n-1; i >= 0; i--){
+        // O(n)
+        for(int i= n-1; i >= 0; i--){ 
             System.out.print(list.get(i) + " ");
         }
         System.out.println();

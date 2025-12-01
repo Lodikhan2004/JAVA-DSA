@@ -18,7 +18,6 @@ public class Operations {
             System.out.print(list.get(i) + " ");
         }
 
-
         //Add at particular index =O(n)
         // list.add(1, 9);
         // System.out.println(list);

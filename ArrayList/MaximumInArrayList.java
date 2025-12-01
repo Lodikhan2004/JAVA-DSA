@@ -11,13 +11,13 @@ public class MaximumInArrayList {
         list.add(3);
         list.add(4);
         list.add(5);
-
+        // O(n)
         int  max = Integer.MIN_VALUE; //-infinity
         for(int i=0; i< list.size(); i++){
             // if(list.get(i) > max){
             //     max = list.get(i);
             // }
-            max = Math.max(max,list.get(i));
+            max = Math.max(max , list.get(i));
         }
         System.out.println("Maximum elem in ArrayList is :" + max);
       
