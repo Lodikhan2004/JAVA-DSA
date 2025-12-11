@@ -1,6 +1,6 @@
 package LinkedLists;
 
-public class DemoLL {
+public class LLOperations {
     //Create a node
     public static class Node{
         
@@ -132,7 +132,7 @@ public class DemoLL {
     
    
     public static void main(String arg[]){
-        DemoLL ll = new DemoLL();
+        LLOperations ll = new LLOperations();
        
         ll.addFirst(2);
         ll.print();

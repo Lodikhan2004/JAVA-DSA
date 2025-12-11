@@ -19,8 +19,8 @@ public class LinkedList {
         Node newNode = new Node(1);
         Node n2 = new Node(2);
         newNode.next = n2;
-        ll.head = newNode;
-        ll.tail = n2;
+        head = newNode;
+        tail = n2;
         System.out.println(head.data);
         System.out.println(tail.data);
 

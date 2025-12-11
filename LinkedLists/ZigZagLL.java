@@ -1,21 +1,19 @@
 package LinkedLists;
 
-
-
-public class SearchLL {
-    public static class Node{
+public class ZigZagLL {
+     public static class Node{
         int data;
         Node next;
 
         public Node(int data){
             this.data = data;
-            this.next = null;
         }
     }
     public static Node head;
     public static Node tail;
     public static int size;
 
+    //Add node at last of linked list
     public void addLast(int data){
         //step 1 : create new node
         Node newNode = new Node(data);
@@ -47,47 +45,61 @@ public class SearchLL {
         }
         System.out.println("null");
     }
-
-    //Search key element
-    public int searchKeyInLL(int key){ //O(n)
-        Node temp = head;
-        int i = 0;
-        while(temp != null){
-            if(temp.data == key){
-                System.out.println("Key found at index");
-                return i;
-            }
-            temp = temp.next;
-            i++;
+    public Node midNode(Node head){
+        Node slow = head;
+        Node fast = head.next;
+        while(fast != null && fast.next != null){
+            slow = slow.next;
+            fast = fast.next.next;
         }
-        System.out.println("key not found");
-        return -1;
+        return slow;
     }
-    //Recursive Search key elem
-    public int isSearchRecursive(int key, Node temp,int i){//O(n)
-        //Base case
-        if(temp == null){
-            return -1;
+    public Node reverse(Node head){
+        Node prev,cur,nex;
+        prev = null;
+        cur = head;
+        while(cur != null){
+            nex = cur.next;
+            cur.next = prev;
+            prev = cur;
+            cur = nex;
+        }
+        head = prev;
+        return head;
+    }
+    public void zigZag(){
+        //find mid node
+        Node mid = midNode(head);
+        
+
+        //Reverse second half
+        Node RH = reverse(mid.next);
+        mid.next = null;
+        Node LH = head;
+        
+        Node nextL,nextR;
+
+        //merge alternating
+        while(RH != null && LH != null){
+            nextL = LH.next;
+            LH.next = RH;
+            nextR = RH.next;
+            RH.next = nextL;
+            LH = nextL;
+            RH = nextR;
         }
         
-        if(temp.data == key){
-            return i;
-        }
-        int result = isSearchRecursive(key,temp.next,i+1);
-        return result;
-       
     }
     public static void main(String[] args) {
-        SearchLL ll = new SearchLL();
+        ZigZagLL ll = new ZigZagLL();
         ll.addLast(1);
         ll.addLast(2);
         ll.addLast(3);
         ll.addLast(4);
         ll.addLast(5);
         ll.print();
-       // System.out.println(ll.searchKeyInLL(5));
-        System.out.println(ll.isSearchRecursive(10, head, 0));
+        ll.zigZag();
+        ll.print();
     }
-    
     
 }
