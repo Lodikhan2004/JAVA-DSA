@@ -5,8 +5,7 @@ import java.util.Stack;
 public class ValidParanthesis {
     public static boolean isValidParanthesis(String str){
         Stack<Character> s = new Stack<>();
-        for(int i=0; i<str.length(); i++){
-
+        for(int i=0; i<str.length(); i++){ //O(n)
             Character curChar = str.charAt(i);
             //Opening
             if(curChar == '(' || curChar == '{' || curChar == '['){
@@ -27,7 +26,7 @@ public class ValidParanthesis {
                 }
             }
         }
-        if(s.isEmpty()){
+        if(s.isEmpty()){ // if empty then return true
             return true;
         }
         return false;
