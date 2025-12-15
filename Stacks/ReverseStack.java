@@ -19,9 +19,9 @@ public class ReverseStack {
         if(s.isEmpty()){
             return;
         }
-        int top = s.pop();
+        int top = s.pop(); //pop all elements while going up
         reverseStack(s);
-        pushAtBottom(s, top);
+        pushAtBottom(s, top); // push at bottom
     }
     public static void printStack(Stack<Integer> s){
          while(!s.isEmpty()){
