@@ -3,6 +3,7 @@ package GreedyAlgorithms;
 import java.util.*;
 public class IndianCoins {
     public static int indianCoins(int cur[], int V){
+        //Arrays.sort(cur)
         Arrays.sort(cur);
         int val= V;
         int ans=0;
