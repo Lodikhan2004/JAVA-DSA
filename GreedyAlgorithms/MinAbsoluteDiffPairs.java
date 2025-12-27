@@ -3,7 +3,7 @@ package GreedyAlgorithms;
 import java.lang.reflect.Array;
 import java.util.*;
 public class MinAbsoluteDiffPairs {
-    public static int minAbsoluteDiff(int A[],int B[]){
+    public static int minAbsoluteDiff(int A[],int B[]){ // O(nlogn)
         Arrays.sort(A); // 1 2 3
         Arrays.sort(B); // 1 2 3
         int minDiff = 0;
