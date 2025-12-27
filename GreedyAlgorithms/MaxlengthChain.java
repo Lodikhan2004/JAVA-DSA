@@ -2,7 +2,8 @@ package GreedyAlgorithms;
 
 import java.util.*;
 public class MaxlengthChain {
-    public static int maxLenght(int pairs[][]){
+    public static int maxLenght(int pairs[][]){// O(nlogn)
+
         Arrays.sort(pairs,Comparator.comparingDouble(o-> o[1]));
 
         int chainLen = 1; // counter
@@ -10,9 +11,9 @@ public class MaxlengthChain {
 
         for(int i=1; i<pairs.length; i++){
             
-            if(pairs[i][0] > pairEnd){ // start 
+            if(pairs[i][0] > pairEnd){ // start > chainEnd
                 chainLen++;
-                pairEnd = pairs[i][1];
+                pairEnd = pairs[i][1]; // update last selected pair
             }
         }
         return chainLen;
