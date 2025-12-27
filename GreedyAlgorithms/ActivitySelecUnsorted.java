@@ -1,7 +1,7 @@
 package GreedyAlgorithms;
 
 import java.util.*;
-public class ActivitySelecUnsorted {
+public class ActivitySelecUnsorted {//O(nlogn)
     public static void main(String[] args) {
         int start[] = {5,1,3,0,8,5};
         int end[] = {7,2,4,6,9,9};
